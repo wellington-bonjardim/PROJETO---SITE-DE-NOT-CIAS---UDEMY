@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(/assets/fundo.png) repeat-x;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+/*=============== HEADER ===============*/
+#container header {
+    height: 150px;
+    background: url(/assets/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    color: #fff;
+    background: url(/assets/divisor.png) no-repeat left center;
+}
+
+header ul .first a {
+    background: none;
+} /*SERVIU PARA TIRAR O PRIMEIRO DIVISOR À ESQUERDA DO HOME!!*/
+
+header ul a:hover {
+    color: #69001d;
+    transition: 0.2s;
+}
+
+body.home #navigation a#home,
+body.brazil #navigation a#brazil,
+body.international #navigation a#international,
+body.economy #navigation a#economy,
+body.health #navigation a#health,
+body.science #navigation a#science,
+body.photos #navigation a#photos {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+    transition: 0.2s;
+}
+
+/*=============== MAIN ===============*/
+main { 
+    margin-top: 60px;
+}
+
+/*=============== CENTER-CONTENT ===============*/
+#center-content {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 190px; /*POR QUE NÃO DEU CERTO COM 195PX?!*/
+}
+
+#two-columns #center-content {
+    width: 555px;
+    margin: 0 0 20px 190px; /*POR QUE NÃO DEU CERTO COM 195PX?!*/
+}
+
+#one-column #center-content {
+    width: 750px;
+    margin: 0 0 20px 0; /*POR QUE NÃO DEU CERTO COM 195PX?!*/
+}
+
+/*=============== RIGHT-CONTENT ===============*/
+#right-content {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 10px; /*POR QUE NÃO DEU CERTO COM 15PX?!*/
+}
+
+/*=============== LEFT-CONTENT ===============*/
+#left-content {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+#left-content ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#left-content ul a:hover {
+    color: #a1a1a1;
+    background: #f9f9f9 url(/assets/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    transition: 0.1s;
+}
+
+#left-content label {
+    display: block;
+    cursor: pointer;
+}
+
+#left-content input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#left-content input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 1px;
+}
+
+.box {
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(/assets/fundo-caixa.png);
+}
+
+.box-content {
+    margin-top: 5px;
+    padding: 5px;
+    background: #fff;
+}
+
+/*=============== H2 and H3 ===============*/
+h2 {
+    font-size: 1.1em;
+    padding: 5px;
+    background: #294c71;
+    color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+#center-content .h3-center-content {
+    background: #b10333;
+    color: #fff;
+}
+
+#right-content h3 {
+    background: #de003e;
+}
+
+#right-content .recent-news h3 {
+    background: none;
+}
+
+/*=============== PARAGRAPHS and LINKS ===============*/
+#center-content .p-center,
+#right-content .p-right {
+    text-align: justify;
+}
+
+#center-content .read-more,
+#right-content .read-more {
+    font-weight: bold;
+    color: #de003e;
+}
+
+#center-content .read-more:hover,
+#right-content .read-more:hover {
+    text-decoration: underline;
+}
+
+/*=============== WOLRD CONTENT ===============*/
+#world-content li {
+    padding: 2px;
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#world-content li a img {
+    float: left;
+    margin: 5px;
+}
+
+#world-content li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#world-content li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+#world-content li:hover {
+    background: #eee;
+}
+
+
+/*=============== IMAGES ===============*/
+img {
+    border: 2px solid #dfdfdf;
+}
+
+img.img-center-content {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/*=============== FOOTER ===============*/
+footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background: #294c71;
+}
+
+footer #rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
